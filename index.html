@@ -1,11 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrianMutinda</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrianMutinda</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="shortcut icon" href="assets\svg\logo.svg" type="image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
+<style>
+  ul li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+</style>
+
 <body>
-    
+  <nav>
+    <img src="assets\svg\logo.svg" alt="my logo">
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">projects</a></li>
+      <li><a href="#">Experience</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+  </nav>
+  <div class="page-content">
+    <img class="profile-pic" src="assets\svg\profile.svg" alt="my profile pic" ;>
+    <div class="my-bio" ;>
+      <h1 class="title">BrianMutinda</h1>
+      <h2 class="sub-title">Developer/creative thinker</h2>
+      <h3 class="small-text">Transforming ideas into digital reality</h3>
+    </div>
+  </div>
+  <section id="about" class="about-section">
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>
+        I'm Brian Mutinda — a developer and creative thinker based in Machakos, Kenya.
+        I enjoy building digital products, telling stories, and turning ideas into real projects.
+        I'm currently working on ThriftVibes254, Blacky Cultures podcast, and growing my skills in web development, art,
+        and tech.
+      </p>
+
+      <ul class="about-facts">
+        <li>📍 Based in Machakos, Kenya</li>
+        <li>💻 Developer & Creative Thinker</li>
+        <li>🛍 Founder of ThriftVibes254</li>
+        <li>🎙 Podcaster (Blacky Cultures)</li>
+        <li>✏️ Visual Artist & DJ (PencilVibes254 / DJ Yobi)</li>
+      </ul>
+    </div>
+
+    <div class="about-boxes">
+      <div class="box">
+        <h3>💻 Web Development</h3>
+        <p>Building clean, modern and functional web experiences.</p>
+      </div>
+      <div class="box">
+        <h3>🎙 Podcaster / Storyteller</h3>
+        <p>Sharing stories and ideas through Blacky Cultures.</p>
+      </div>
+      <div class="box">
+        <h3>🛍 Entrepreneur</h3>
+        <p>Founder of ThriftVibes254 — thrift fashion brand.</p>
+      </div>
+      <div class="box">
+        <h3>✏️ Artist & Designer</h3>
+        <p>Pencil art, sketching & digital creative expression.</p>
+      </div>
+    </div>
+  </section>
+  <!-- ====== Projects Section ====== -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub"> Thrift, storytelling, and portfolio builds.</p>
+
+      <div class="projects-grid">
+        <!-- Card 1 -->
+        <article class="project-card" data-project="p1">
+          <div class="card-media">
+            <img src="assets\svg\thrift.svg" alt="ThriftVibes254 screenshot">
+          </div>
+          <div class="card-body">
+            <h3>ThriftVibes254</h3>
+            <p class="card-desc">A thrift clothing brand platform and sales flow — hawking to online support, inventory
+              ideas and promos.</p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>Business</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-view" data-open="p1">View Project</button>
+              <a class="btn btn-link" href="#" target="_blank" rel="noopener">Live</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="project-card" data-project="p2">
+          <div class="card-media">
+            <img src="assets\svg\blacky.svg" alt="Blacky Cultures podcast cover">
+          </div>
+          <div class="card-body">
+            <h3>Blacky Cultures</h3>
+            <p class="card-desc">Storytelling podcast — episodes, show notes, and audio distribution (Spotify + social
+              promotion).</p>
+            <div class="tech-tags">
+              <span>Podcast</span><span>Audio</span><span>Branding</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-view" data-open="p2">View Project</button>
+              <a class="btn btn-link" href="#" target="_blank" rel="noopener">Listen</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="project-card" data-project="p3">
+          <div class="card-media">
+            <img src="assets\svg\background.svg" alt="Personal portfolio screenshot">
+          </div>
+          <div class="card-body">
+            <h3>Personal Portfolio</h3>
+            <p class="card-desc">This portfolio — clean UI, responsive layout, and a showcase of my hobbies: web, art,
+              and DJing.</p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>Responsive</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-view" data-open="p3">View Project</button>
+              <a class="btn btn-link" href="#" target="_blank" rel="noopener">Source</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- ====== Modal Templates ====== -->
+    <div id="project-modals">
+      <!-- Modal p1 -->
+      <div class="modal" id="modal-p1" aria-hidden="true">
+        <div class="modal-inner" role="dialog" aria-modal="true" aria-labelledby="modal-p1-title">
+          <button class="modal-close" data-close>&times;</button>
+          <h3 id="modal-p1-title">ThriftVibes254</h3>
+          <p class="modal-sub">Thrift clothing brand — sales flow, promos, and inventory ideas.</p>
+          <img src="assets\svg\thrift.svg" alt="" class="modal-img">
+          <p>Details: Built to support hawking and small-scale online sales. Features product cards, simple stock
+            tracking ideas, and social-driven promotions. Tech/notes: idea stage, store pages, WhatsApp sales flow.</p>
+          <div class="modal-tags"><span>HTML</span><span>CSS</span><span>Business</span></div>
+          <div class="modal-actions">
+            <a class="btn" href="#" target="_blank" rel="noopener">Open Live</a>
+            <a class="btn btn-secondary" href="#" target="_blank" rel="noopener">View Files</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal p2 -->
+      <div class="modal" id="modal-p2" aria-hidden="true">
+        <div class="modal-inner" role="dialog" aria-modal="true" aria-labelledby="modal-p2-title">
+          <button class="modal-close" data-close>&times;</button>
+          <h3 id="modal-p2-title">Blacky Cultures</h3>
+          <p class="modal-sub">Storytelling podcast focused on culture and stories.</p>
+          <img src="assets\svg\blacky.svg" alt="">
+          <p>Details: Podcast hosted on Spotify for Creators. Includes episode list, show notes, and social promos.
+            Tech/notes: audio editing workflow and social promotion planning.</p>
+          <div class="modal-tags"><span>Podcast</span><span>Audio</span><span>Branding</span></div>
+          <div class="modal-actions">
+            <a class="btn" href="#" target="_blank" rel="noopener">Open Episode</a>
+            <a class="btn btn-secondary" href="#" target="_blank" rel="noopener">Show Notes</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal p3 -->
+      <div class="modal" id="modal-p3" aria-hidden="true">
+        <div class="modal-inner" role="dialog" aria-modal="true" aria-labelledby="modal-p3-title">
+          <button class="modal-close" data-close>&times;</button>
+          <h3 id="modal-p3-title">Personal Portfolio</h3>
+          <p class="modal-sub">This portfolio site — my projects, art, and DJ work in one place.</p>
+          <img src="assets\svg\background.svg" alt="" class="modal-img">
+          <p>Details: Built as a responsive single-page portfolio. Sections include Hero, About, Projects, and Contact.
+            Tech/notes: designed for quick iteration and low-bandwidth users.</p>
+          <div class="modal-tags"><span>HTML</span><span>CSS</span><span>Responsive</span></div>
+          <div class="modal-actions">
+            <a class="btn" href="#" target="_blank" rel="noopener">View Live</a>
+            <a class="btn btn-secondary" href="#" target="_blank" rel="noopener">Source</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== End Projects Section ====== -->
+
+  <footer class="site-footer">
+    <div class="footer-content">
+
+      <div class="footer-logo">
+        <img src="assets\svg\logo.svg" alt="BM">
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="mutindabrian003@gmail.com">Email</a></li>
+        <li><a href="https://instagram.com/_brian.k.e" target="_blank">Instagram</a></li>
+        <li><a href="https://github.com/Brayohh" target="_blank">GitHub</a></li>
+        <li><a href="https://wa.me/254799209171" target="_blank">WhatsApp</a></li>
+      </ul>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Brian Mutinda. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- Your HTML content above -->
+
+  <script>
+    // Smooth scroll for nav links and hero button
+    document.querySelectorAll('a[href^="#"], #btnToProjects').forEach(link => {
+      link.addEventListener('click', function (e) {
+        const target = this.getAttribute('href') || '#projects';
+        if (target.startsWith("#")) {
+          e.preventDefault();
+          const el = document.querySelector(target);
+          if (el) {
+            el.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }
+      });
+    });
+  </script>
+
 </body>
+
+</html>
+
+
+</body>
+
 </html>
