@@ -36,6 +36,34 @@
       object-fit: cover;
     }
 
+    @media (max-width: 768px) {
+      .projects .card-img-top {
+        height: 140px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .projects .card-img-top {
+        height: 120px;
+      }
+      .project-card {
+        border-radius: 8px !important;
+      }
+      .card-body {
+        padding: 12px !important;
+      }
+      .card-title {
+        font-size: 16px !important;
+      }
+      .card-text {
+        font-size: 0.8rem !important;
+      }
+      .badge-tech {
+        font-size: 0.7rem !important;
+        padding: 3px 6px !important;
+      }
+    }
+
     .projects .section-title h2 {
       color: #fff;
     }
@@ -74,19 +102,19 @@
       <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3 mt-3 mt-lg-0 text-light">
         
         <li class="nav-item">
-          <a class="nav-link  active btn btn-outline-warning text-dark" href="#home">Home</a>
+          <a class="nav-link  active btn btn-outline-primary text-dark" href="#home">Home</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link  active btn btn-outline-warning text-dark" href="#about">About</a>
+          <a class="nav-link  active btn btn-outline-primary text-dark" href="#about">About</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link  active btn btn-outline-warning text-dark" href="#projects">Projects</a>
+          <a class="nav-link  active btn btn-outline-primary text-dark" href="#projects">Projects</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link  active btn btn-outline-warning text-dark" href="#contact">
+          <a class="nav-link  active btn btn-outline-primary text-dark" href="#contact">
             Contact
           </a>
         </li>

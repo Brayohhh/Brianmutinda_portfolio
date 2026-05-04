@@ -343,7 +343,27 @@ nav> ul> li> a {
 @media (max-width: 700px) {
   .projects-section { padding: 40px 6%; }
   .projects-grid { grid-template-columns: 1fr; }
-  .card-media img { height: 200px; }
+  .card-media img { height: 140px; }
+  .project-card { border-radius: 8px; }
+  .card-body { padding: 14px; gap: 8px; }
+  .card-body h3 { font-size: 18px; }
+  .card-desc { font-size: 0.85rem; }
+  .tech-tags span { font-size: 0.75rem; padding: 4px 6px; }
+  .btn { padding: 6px 10px; font-size: 0.85rem; }
+}
+@media (max-width: 480px) {
+  .projects-section { padding: 30px 4%; }
+  .projects-grid { gap: 16px; }
+  .card-media img { height: 120px; }
+  .project-card { border-radius: 8px; box-shadow: 0 4px 12px rgba(59,47,47,0.04); }
+  .card-body { padding: 12px; gap: 6px; }
+  .card-body h3 { font-size: 16px; }
+  .card-desc { font-size: 0.8rem; }
+  .tech-tags { margin-top: 4px; gap: 6px; }
+  .tech-tags span { font-size: 0.7rem; padding: 3px 5px; }
+  .card-actions { gap: 8px; margin-top: 8px; }
+  .btn { padding: 5px 8px; font-size: 0.8rem; }
+  .section-title { font-size: 32px; }
 }
 
 .navbar .nav-link {
